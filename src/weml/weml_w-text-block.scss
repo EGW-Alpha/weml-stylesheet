@@ -1,6 +1,7 @@
 /* WEML w-text-block styles */
 
 $weml-paragraph-indent-size: 1.5em;
+$weml-paragraph-blockquote-border-color: #808080FF;
 
 w-text-block {
   display: block;
@@ -9,7 +10,7 @@ w-text-block {
   /* blockquote */
 
   &[type="blockquote"] {
-    border-left: 3px solid #808080FF;
+    border-left: 3px solid $weml-paragraph-blockquote-border-color;
     padding-left: 3px;
     margin-left: $weml-paragraph-indent-size;
 
