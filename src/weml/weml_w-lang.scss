@@ -1,0 +1,9 @@
+/* WEML W-Lang elements */
+
+$weml-w-lang-border-color: #07b28a;
+
+w-lang {
+  border-bottom: 1px solid $weml-w-lang-border-color;
+  margin-bottom: -1px;
+  border-radius: 2px;
+}

@@ -1,5 +1,7 @@
 .idea/
 .vscode/
+example/node_modules/
+css/
 
 ### Node template
 # Logs

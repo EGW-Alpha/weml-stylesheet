@@ -1,0 +1,33 @@
+/* WEML w-format styles */
+
+w-format {
+  &[type="bold"] {
+    font-weight: bold;
+  }
+
+  &[type="italic"] {
+    font-style: italic;
+  }
+
+  &[type="underline"] {
+    text-decoration: underline;
+  }
+
+  &[type="superscript"] {
+    vertical-align: super;
+    font-size: smaller;
+  }
+
+  &[type="subscript"] {
+    vertical-align: sub;
+    font-size: smaller;
+  }
+
+  &[type="small-caps"] {
+    text-transform: lowercase;
+  }
+
+  &[type="all-caps"] {
+    text-transform: uppercase;
+  }
+}

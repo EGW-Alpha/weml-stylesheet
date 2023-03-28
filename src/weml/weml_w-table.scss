@@ -1,0 +1,14 @@
+/* WEML Table styles */
+
+$weml-table-border-color: #808080FF;
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid $weml-table-border-color;
+  text-align: center;
+}

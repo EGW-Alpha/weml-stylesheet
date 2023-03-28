@@ -1,0 +1,22 @@
+/* WEML w-note-body styles */
+
+$weml-w-note-body-background-color: #b4b4b4;
+$weml-w-note-body-border-color: #b4b4b4;
+
+w-note-body {
+  display: none;
+  padding: 5px;
+  background: $weml-w-note-body-background-color;
+  outline: 1px solid $weml-w-note-body-border-color;
+  border-radius: 2px;
+  width: initial;
+  word-wrap: anywhere;
+  word-spacing: normal;
+  overflow: auto;
+  right: 0;
+  top: 1em;
+}
+
+w-note:hover w-note-body {
+  display: block;
+}

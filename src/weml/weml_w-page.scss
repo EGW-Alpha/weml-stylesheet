@@ -1,0 +1,30 @@
+/* WEML W-Page styles */
+
+$weml-w-page-before-background-color: #b4b4b4bf;
+$weml-w-page-before-border-color: #5858587F;
+
+w-page {
+  display: inline;
+  position: relative;
+  margin: 0 5px;
+  color: initial;
+
+  &::before {
+    text-indent: 0;
+    line-height: unset;
+    box-sizing: border-box;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum", "tnum";
+    display: inline;
+    height: content-box;
+    white-space: nowrap;
+    opacity: 1;
+    text-align: center;
+    content: attr(number);
+    padding: 0 5px;
+    background: $weml-w-page-before-background-color;
+    outline: 1px solid $weml-w-page-before-border-color;
+    border-radius: 2px;
+  }
+}

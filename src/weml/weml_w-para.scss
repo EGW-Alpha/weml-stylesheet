@@ -1,0 +1,10 @@
+/* WEML W-Para styles */
+
+w-para {
+  display: block;
+
+  &[align="right"] {
+    text-align: right;
+  }
+
+}

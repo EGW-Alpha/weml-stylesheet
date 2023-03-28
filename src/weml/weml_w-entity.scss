@@ -1,0 +1,12 @@
+/* WEML W-Entity elements */
+
+$weml-w-entity-text-color: #F00F;
+
+w-entity {
+  color: $weml-w-entity-text-color;
+}
+
+w-entity[value]:hover::after {
+  content: "[" attr(value) "]";
+  padding: 0 0.2em;
+}

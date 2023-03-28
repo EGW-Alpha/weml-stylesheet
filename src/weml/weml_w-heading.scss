@@ -1,0 +1,41 @@
+/* WEML W-Heading styles */
+
+w-heading {
+  display: block;
+  font-weight: bolder;
+
+  &[skip] {
+    opacity: 0.3;
+  }
+
+  &[level="1"] {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  &[level="2"] {
+    font-size: 1.5em;
+    margin: 0.75em 0;
+  }
+
+  &[level="3"] {
+    font-size: 1.17em;
+    margin: 0.83em 0;
+  }
+
+  &[level="4"] {
+    font-size: 1em;
+    margin: 0.83em 0;
+  }
+
+  &[level="5"] {
+    font-size: 0.83em;
+    margin: 1.5em 0;
+  }
+
+  &[level="6"] {
+    font-size: 0.75em;
+    margin: 1.67em 0;
+  }
+}
+

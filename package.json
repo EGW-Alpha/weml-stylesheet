@@ -9,9 +9,10 @@
   "main": "index.scss",
   "scripts": {
     "build": "rimraf css && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-sass": "node-sass --output-style expanded src/index.scss ./css/index.css",
-    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/index.css",
-    "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css"
+    "build-sass": "node-sass --output-style expanded src/weml/index.scss ./css/weml.css",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/weml.css",
+    "convert-to-sass": "node-sass --output-style expanded src/weml ./css",
+    "build-cleancss": "cleancss -o ./css/weml.min.css ./css/weml.css"
   },
   "files": [
     "css"
@@ -20,7 +21,16 @@
     "autoprefixer": "^10.4.14",
     "clean-css-cli": "^5.6.2",
     "node-sass": "^8.0.0",
+    "sass": "^1.60.0",
     "postcss-cli": "^10.1.0",
-    "rimraf": "^4.4.1"
+    "rimraf": "^4.4.1",
+    "normalize-scss": "^7.0.1",
+    "stylelint": "^15.3.0",
+    "stylelint-scss": "^4.6.0",
+    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "stylelint-config-recommended-less": "^1.0.4",
+    "stylelint-config-html": "^1.1.0"
   }
 }

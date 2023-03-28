@@ -1,0 +1,9 @@
+/* WEML W-Sent styles */
+
+$weml-w-sent-border-color: #26b207;
+
+w-sent {
+  outline: $weml-w-sent-border-color solid 1px;
+  border-radius: 2px;
+  padding: 0 0.1em;
+}

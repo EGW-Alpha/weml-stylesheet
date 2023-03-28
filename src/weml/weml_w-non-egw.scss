@@ -1,0 +1,13 @@
+/* WEML W-Non-Egw elements */
+
+$weml-w-non-egw-text-color: #2196F3B3;
+
+w-non-egw {
+  color: $weml-w-non-egw-text-color;
+
+  &[type]:hover::after {
+    padding: 0 0.2em;
+    content: "[" attr(type) "]";
+  }
+}
+

@@ -1,0 +1,21 @@
+/* WEML <br/> styles */
+
+$weml-br-pseudo-text-color: transparent;
+
+br {
+  content: "" !important;
+
+  &::before {
+    content: "\00B6\000A";
+    white-space: pre;
+    padding-left: 1px;
+    color: $weml-br-pseudo-text-color;
+  }
+
+  &:empty::after {
+    content: "";
+    white-space: normal;
+    color: $weml-br-pseudo-text-color;
+  }
+}
+

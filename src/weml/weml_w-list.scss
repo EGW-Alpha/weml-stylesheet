@@ -1,0 +1,19 @@
+/* WEML W-List styles */
+
+w-list {
+  display: block;
+  margin: 1em 0;
+  padding-left: 3em;
+
+  &[type="ordered"] {
+    list-style-type: decimal;
+  }
+
+  &[type="unordered"] {
+    list-style-type: circle;
+  }
+}
+
+w-li {
+  display: list-item;
+}
