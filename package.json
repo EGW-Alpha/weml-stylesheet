@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/EGW-Alpha/weml-stylesheet.git"
   },
-  "main": "index.scss",
+  "main": "css",
   "scripts": {
     "build": "rimraf css && npm run build-scss && npm run build-css && npm run build-autoprefix && npm run build-cleancss ",
     "build-css": "node-sass --output-style expanded src/weml/weml.scss ./css/weml.css",
