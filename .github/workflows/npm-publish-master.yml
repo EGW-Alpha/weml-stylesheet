@@ -5,9 +5,9 @@ name: Node publish master CI
 
 on:
   push:
-    branches: [ master-qq ]
+    branches: [ master ]
   pull_request:
-    branches: [ master-qq ]
+    branches: [ master ]
 
 jobs:
   build:
