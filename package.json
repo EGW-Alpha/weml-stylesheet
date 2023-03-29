@@ -1,6 +1,6 @@
 {
   "name": "weml-stylesheet",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "weml web format stylesheet",
   "author": "EGW-Alpha <rev4ge@outlook.com>",
   "license": "MIT",
@@ -9,20 +9,23 @@
     "url": "https://github.com/EGW-Alpha/weml-stylesheet.git"
   },
   "main": "css",
+  "files": [
+    "css"
+  ],
   "scripts": {
     "build": "rimraf css && npm run build-scss && npm run build-css && npm run build-autoprefix && npm run build-cleancss ",
     "build-css": "node-sass --output-style expanded src/weml/weml.scss ./css/weml.css",
     "build-autoprefix": "postcss --use autoprefixer --map --output ./css/weml.autoprefix.css ./css/weml.css",
     "build-scss": "bundle-scss -m src/weml/weml.scss -d ./css/weml.scss",
     "build-cleancss": "cleancss -o ./css/weml.min.css ./css/weml.css",
+    "prepublish": "run-s build",
+    "test": "run-s test:build",
+    "test:build": "run-s build",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix ."
   },
-  "files": [
-    "css"
-  ],
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "bundle-scss": "^1.5.1",
