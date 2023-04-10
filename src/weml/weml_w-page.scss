@@ -6,7 +6,7 @@ $weml-w-page-before-border-color: #5858587F;
 w-page {
   display: inline;
   position: relative;
-  margin: 0 5px;
+  padding: 0 5px;
   color: initial;
 
   &::before {
