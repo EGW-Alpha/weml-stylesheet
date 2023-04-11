@@ -24,6 +24,7 @@ w-anchor {
     background-image: $weml-w-anchor-before-background-image;
     background-size: $weml-w-anchor-background-size;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &:hover::after {
