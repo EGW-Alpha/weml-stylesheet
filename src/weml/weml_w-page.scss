@@ -19,7 +19,7 @@ w-page {
     text-align: center;
     content: attr(number);
     padding: 0 5px;
-    color: inherit;
+    color: #000;
     background: $weml-w-page-before-background-color;
     outline: 1px solid $weml-w-page-before-border-color;
     border-radius: 2px;
