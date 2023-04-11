@@ -6,16 +6,12 @@ $weml-w-page-before-border-color: #5858587F;
 w-page {
   display: inline;
   position: relative;
-  padding: 0 5px;
+  margin: 0 5px;
   color: initial;
 
   &::before {
     text-indent: 0;
     line-height: unset;
-    box-sizing: border-box;
-    font-variant: tabular-nums;
-    list-style: none;
-    font-feature-settings: "tnum", "tnum";
     display: inline;
     white-space: nowrap;
     opacity: 1;

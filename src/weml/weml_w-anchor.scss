@@ -13,12 +13,7 @@ w-anchor {
   &::before {
     text-indent: 0;
     line-height: unset;
-    box-sizing: border-box;
-    font-variant: tabular-nums;
-    list-style: none;
-    font-feature-settings: "tnum", "tnum";
     display: inline;
-    height: content-box;
     white-space: nowrap;
     opacity: 1;
     text-align: center;
