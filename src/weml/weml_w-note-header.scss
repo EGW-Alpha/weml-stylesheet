@@ -7,10 +7,6 @@ w-note-header {
   vertical-align: super;
   padding: 0 5px;
   display: inline;
-  box-sizing: border-box;
-  font-variant: tabular-nums;
-  list-style: none;
-  font-feature-settings: "tnum", "tnum";
   min-width: 2em;
   opacity: 1;
   color: #e89a3c;
@@ -18,7 +14,6 @@ w-note-header {
 
   &::before {
     content: "\00a0\00a0\00a0\00a0\00a0";
-    color: #e89a3c;
     background: $weml-w-note-header-before-background-image no-repeat;
   }
 }
