@@ -26,7 +26,7 @@ w-anchor {
   }
 
   &:hover::before {
-    content: "\00a0\00a0\00a0\00a0\00a0\00a0" attr(id) !important;
+    content: "\00a0\00a0\00a0\00a0\00a0" attr(id) !important;
     //padding-left: 0.3em;
   }
 }
