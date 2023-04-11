@@ -16,15 +16,16 @@ w-page {
   color: $weml-w-page-font-color;
   border-radius: 2px;
 
-  &::before {
-    content: '\00a0\00a0\00a0\00a0';
-    color: transparent;
-    text-indent: 0;
-    white-space: nowrap;
-    background-image: $weml-w-page-before-background-image;
-    background-size: $weml-w-page-background-size;
-    background-repeat: no-repeat;
-  }
+  //&::before {
+  //  content: '\00a0\00a0\00a0\00a0';
+  //  color: transparent;
+  //  text-indent: 0;
+  //  white-space: nowrap;
+  //  background-image: $weml-w-page-before-background-image;
+  //  background-size: $weml-w-page-background-size;
+  //  background-repeat: no-repeat;
+  //  padding-right: 5px;
+  //}
 
   &::after {
     text-indent: 0;

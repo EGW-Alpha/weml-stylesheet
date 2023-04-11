@@ -27,6 +27,7 @@ w-anchor {
   }
 
   &:hover::after {
+    padding-left: 5px;
     text-indent: 0;
     white-space: nowrap;
     content: attr(id) !important;
