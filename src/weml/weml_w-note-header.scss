@@ -5,16 +5,22 @@ $weml-w-note-header-before-background-image: url("data:image/svg+xml,%3Csvg xmln
 w-note-header {
   text-indent: 0;
   vertical-align: super;
+  text-align: center;
   padding: 0 5px;
   display: inline;
-  min-width: 2em;
   opacity: 1;
   color: #e89a3c;
   border-radius: 2px;
 
   &::before {
-    content: "\00a0\00a0\00a0\00a0\00a0";
-    background: $weml-w-note-header-before-background-image no-repeat;
+    content: '\00a0\00a0\00a0\00a0';
+    color: transparent;
+    text-indent: 0;
+    white-space: nowrap;
+    background-image: $weml-w-note-header-before-background-image;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-right: 5px;
   }
 }
 

@@ -1,27 +1,24 @@
 /* WEML W-Page styles */
 
 $weml-w-page-before-background-color: #b4b4b4bf;
-$weml-w-page-before-border-color: #5858587F;
+$weml-w-page-before-border-color: rgba(88, 88, 88, 0.25);
 $weml-w-page-before-background-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' fill='currentColor' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M17 21v-4H7v4H5v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v5h-2zM7 3v4h10V3h2v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3h2zM2 9l4 3-4 3V9zm20 0v6l-4-3 4-3z'/%3E%3C/g%3E%3C/svg%3E");
 
 w-page {
   display: inline;
   position: relative;
   margin: 0 5px;
-  color: initial;
+  padding: 0 5px;
+  background: $weml-w-page-before-background-color;
+  outline: 1px solid $weml-w-page-before-border-color;
+  color: #000;
+  border-radius: 2px;
 
-  &::before {
+  &::after {
     text-indent: 0;
     line-height: unset;
     display: inline;
     white-space: nowrap;
-    opacity: 1;
-    text-align: center;
-    content: attr(number);
-    padding: 0 5px;
-    color: #000;
-    background: $weml-w-page-before-background-color;
-    outline: 1px solid $weml-w-page-before-border-color;
-    border-radius: 2px;
+    content: attr(number) !important;
   }
 }
