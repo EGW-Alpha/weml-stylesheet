@@ -16,6 +16,6 @@ w-entity[value]:hover::after {
   top: -1em;
   white-space: nowrap;
   background: $weml-w-entity-after-background-color;
-  padding: 0 0.2em;
+  padding: 0 0.1em;
   content: "[" attr(value) "]";
 }

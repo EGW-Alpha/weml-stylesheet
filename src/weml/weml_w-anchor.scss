@@ -29,14 +29,13 @@ w-anchor {
   }
 
   &:hover::after {
-    padding-left: 5px;
     position: absolute;
     top: -1em;
     left: 0;
     background: $weml-w-anchor-after-background-color;
     white-space: nowrap;
     color: inherit;
-    border-radius: 2px;
+    padding: 0 0.1em;
     text-indent: 0;
     content: attr(id) !important;
   }
