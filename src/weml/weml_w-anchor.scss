@@ -29,6 +29,13 @@ w-anchor {
 
   &:hover::after {
     padding-left: 5px;
+    position: absolute;
+    top: -1em;
+    left: 100%;
+    background: inherit;
+    outline: 1px solid $weml-w-anchor-before-border-color;
+    color: inherit;
+    border-radius: 2px;
     text-indent: 0;
     white-space: nowrap;
     content: attr(id) !important;

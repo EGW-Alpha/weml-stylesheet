@@ -1,11 +1,19 @@
 /* WEML W-Non-Egw elements */
 
 $weml-w-non-egw-text-color: #2196F3B3;
+$weml-w-non-egw-after-background-color: #dbdbdb;
+$weml-w-non-egw-after-border-color: rgba(88, 88, 88, 0.25);
 
 w-non-egw {
+  position: relative;
   color: $weml-w-non-egw-text-color;
 
   &[type]:hover::after {
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+    top: -1em;
+    background: $weml-w-non-egw-after-background-color;
     padding: 0 0.2em;
     content: "[" attr(type) "]";
   }
