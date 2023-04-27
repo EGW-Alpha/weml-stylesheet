@@ -11,6 +11,7 @@ w-non-egw {
   &[type]:hover::after {
     text-indent: 0;
     position: absolute;
+    white-space: nowrap;
     left: 0;
     top: -1em;
     background: $weml-w-non-egw-after-background-color;
