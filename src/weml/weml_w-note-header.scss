@@ -8,22 +8,21 @@ w-note-header {
   text-indent: 0;
   vertical-align: super;
   text-align: center;
-  padding: 0 5px;
+  padding: 0 0.2em;
   display: inline;
   position: relative;
   color: $weml-w-note-header-font-color;
-  border-radius: 2px;
 
-  &::before {
-    content: '\00a0\00a0\00a0\00a0';
-    color: transparent;
-    text-indent: 0;
-    white-space: nowrap;
-    background-image: $weml-w-note-header-before-background-image;
-    background-size: $weml-w-note-header-background-size;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-right: 5px;
-  }
+  //&::before {
+  //  content: '\00a0\00a0\00a0\00a0';
+  //  color: transparent;
+  //  text-indent: 0;
+  //  white-space: nowrap;
+  //  background-image: $weml-w-note-header-before-background-image;
+  //  background-size: $weml-w-note-header-background-size;
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //  padding-right: 5px;
+  //}
 }
 
