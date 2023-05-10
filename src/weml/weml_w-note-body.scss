@@ -4,7 +4,6 @@ $weml-w-note-body-background-color: rgba(180, 180, 180, 0.25);
 $weml-w-note-body-border-color: rgba(180, 180, 180, 0.25);
 
 w-note-body, .w-note-body {
-  display: none;
   padding: 5px;
   background: $weml-w-note-body-background-color;
   outline: 1px solid $weml-w-note-body-border-color;
@@ -15,6 +14,10 @@ w-note-body, .w-note-body {
   overflow: auto;
   right: 0;
   top: 1em;
+}
+
+w-note-body {
+  display: none;
 }
 
 w-note:hover w-note-body {

@@ -6,23 +6,28 @@ $weml-w-note-header-font-color: #e89a3c;
 
 w-note-header, .w-note-header {
   text-indent: 0;
-  vertical-align: super;
   text-align: center;
-  padding: 0 0.2em;
+  padding: 0 0.1em;
   display: inline;
   position: relative;
   color: $weml-w-note-header-font-color;
+}
 
-  //&::before {
-  //  content: '\00a0\00a0\00a0\00a0';
-  //  color: transparent;
-  //  text-indent: 0;
-  //  white-space: nowrap;
-  //  background-image: $weml-w-note-header-before-background-image;
-  //  background-size: $weml-w-note-header-background-size;
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  padding-right: 5px;
-  //}
+w-note-header {
+  vertical-align: super;
+}
+
+.w-note-header-before {
+  &::before {
+    content: '\00a0\00a0\00a0\00a0';
+    color: transparent;
+    text-indent: 0;
+    white-space: nowrap;
+    background-image: $weml-w-note-header-before-background-image;
+    background-size: $weml-w-note-header-background-size;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 0 0.1em;
+  }
 }
 
