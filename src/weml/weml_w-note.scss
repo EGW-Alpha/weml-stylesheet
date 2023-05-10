@@ -4,7 +4,7 @@ $weml-w-note-before-background-image: url("data:image/svg+xml,%3Csvg xmlns='http
 $weml-w-note-before-background-size: auto;
 $weml-w-note-before-font-color: #e89a3c;
 
-w-note {
+w-note, .w-note {
   display: inline;
   margin: 0 5px;
   position: relative;

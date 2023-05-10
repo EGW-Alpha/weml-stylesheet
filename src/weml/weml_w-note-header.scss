@@ -4,7 +4,7 @@ $weml-w-note-header-before-background-image: url("data:image/svg+xml,%3Csvg xmln
 $weml-w-note-header-background-size: auto;
 $weml-w-note-header-font-color: #e89a3c;
 
-w-note-header {
+w-note-header, .w-note-header {
   text-indent: 0;
   vertical-align: super;
   text-align: center;

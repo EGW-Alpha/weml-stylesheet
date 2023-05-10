@@ -3,7 +3,7 @@
 $weml-w-note-body-background-color: rgba(180, 180, 180, 0.25);
 $weml-w-note-body-border-color: rgba(180, 180, 180, 0.25);
 
-w-note-body {
+w-note-body, .w-note-body {
   display: none;
   padding: 5px;
   background: $weml-w-note-body-background-color;
