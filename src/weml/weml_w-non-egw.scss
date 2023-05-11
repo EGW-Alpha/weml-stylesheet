@@ -1,8 +1,9 @@
 /* WEML W-Non-Egw elements */
 
 $weml-w-non-egw-text-color: #2196F3B3;
-$weml-w-non-egw-after-background-color: rgba(183, 183, 183, 0.9);
+$weml-w-non-egw-after-background-color: rgba(180, 180, 180, 0.25);
 $weml-w-non-egw-after-border-color: rgba(88, 88, 88, 0.25);
+$weml-w-non-egw-after-text-color: #000;
 
 w-non-egw {
   position: relative;
@@ -11,6 +12,7 @@ w-non-egw {
   &[type]:hover::after {
     text-indent: 0;
     position: absolute;
+    color: $weml-w-non-egw-after-text-color;
     left: 0;
     top: -1em;
     white-space: nowrap;
