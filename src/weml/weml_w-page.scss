@@ -7,7 +7,9 @@ $weml-w-page-background-size: auto;
 $weml-w-page-font-color: #000;
 
 w-page {
-  display: inline;
+  display: inline-block;
+  text-indent: 0;
+  line-height: initial;
   position: relative;
   margin: 0 5px;
   padding: 0 5px;
@@ -31,7 +33,6 @@ w-page {
   &::after {
     text-indent: 0;
     line-height: unset;
-    display: inline;
     white-space: nowrap;
     content: attr(number) !important;
   }

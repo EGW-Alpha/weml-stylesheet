@@ -8,7 +8,9 @@ w-note-header, .w-note-header {
   text-indent: 0;
   text-align: center;
   padding: 0 0.1em;
-  display: inline;
+  display: inline-block;
+  text-indent: 0;
+  line-height: initial;
   position: relative;
   color: $weml-w-note-header-font-color;
 }

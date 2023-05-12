@@ -6,6 +6,8 @@ $weml-w-note-before-font-color: #e89a3c;
 
 w-note, .w-note {
   display: inline;
+  text-indent: 0;
+  line-height: initial;
   margin: 0 5px;
   position: relative;
 

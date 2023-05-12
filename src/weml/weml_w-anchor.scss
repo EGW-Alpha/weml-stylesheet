@@ -8,7 +8,9 @@ $weml-w-anchor-background-size: auto;
 $weml-w-anchor-font-color: #000;
 
 w-anchor {
-  display: inline;
+  display: inline-block;
+  text-indent: 0;
+  line-height: initial;
   position: relative;
   margin: 0 5px;
   padding: 0 5px;
