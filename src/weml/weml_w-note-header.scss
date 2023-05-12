@@ -6,10 +6,8 @@ $weml-w-note-header-font-color: #e89a3c;
 
 w-note-header, .w-note-header {
   text-indent: 0;
-  text-align: center;
+  text-align: start;
   padding: 0 0.1em;
-  display: inline-block;
-  text-indent: 0;
   line-height: initial;
   position: relative;
   color: $weml-w-note-header-font-color;

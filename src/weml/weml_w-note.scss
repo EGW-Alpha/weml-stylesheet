@@ -6,16 +6,17 @@ $weml-w-note-before-font-color: #e89a3c;
 
 w-note, .w-note {
   display: inline;
-  text-indent: 0;
-  line-height: initial;
   margin: 0 5px;
   position: relative;
 
   &::before {
+    display: inline-block;
+    text-indent: 0;
+    line-height: initial;
     content: '\00a0\00a0\00a0\00a0';
     color: $weml-w-note-before-font-color;
     vertical-align: super;
-    text-align: center;
+    text-align: start;
     text-indent: 0;
     white-space: nowrap;
     background-image: $weml-w-note-before-background-image;
