@@ -1,0 +1,16 @@
+/* WEML Image styles */
+
+.weml-editor figure {
+  img {
+    width: inherit;
+    height: inherit;
+  }
+
+  width: 10em;
+  height: auto;
+
+  figcaption {
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+}

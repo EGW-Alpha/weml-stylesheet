@@ -1,0 +1,25 @@
+@import "weml-editor_br";
+@import "weml_w-anchor";
+@import "weml_w-entity";
+@import "weml_w-format";
+@import "weml_w-heading";
+@import "weml-editor_w-image";
+@import "weml_w-lang";
+@import "weml_w-list";
+@import "weml_w-non-egw";
+@import "weml_w-note";
+@import "weml_w-note-body";
+@import "weml_w-note-header";
+@import "weml_w-page";
+@import "weml_w-sent";
+@import "weml_w-para";
+@import "weml-editor_w-table";
+@import "weml_w-text-block";
+
+/* WEML-editor root styles */
+
+.weml-editor *[dir="rtl"] {
+  unicode-bidi: plaintext;
+  text-align: start;
+  direction: rtl;
+}
