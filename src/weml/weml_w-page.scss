@@ -11,29 +11,24 @@ w-page {
   text-indent: 0;
   line-height: initial;
   position: relative;
-  margin: 0 5px;
-  padding: 0 5px;
-  background: $weml-w-page-before-background-color;
-  outline: 1px solid $weml-w-page-before-border-color;
-  color: $weml-w-page-font-color;
-  border-radius: 2px;
-
-  //&::before {
-  //  content: '\00a0\00a0\00a0\00a0';
-  //  color: transparent;
-  //  text-indent: 0;
-  //  white-space: nowrap;
-  //  background-image: $weml-w-page-before-background-image;
-  //  background-size: $weml-w-page-background-size;
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  padding-right: 5px;
-  //}
-
   &::after {
+    margin: 0 5px;
+    padding: 0 5px;
+    background: $weml-w-page-before-background-color;
+    outline: 1px solid $weml-w-page-before-border-color;
+    color: $weml-w-page-font-color;
+    border-radius: 2px;
     text-indent: 0;
     line-height: unset;
     white-space: nowrap;
     content: attr(number) !important;
+  }
+}
+
+w-page:not(w-text-block w-page) {
+  display: flex;
+  margin: 5px;
+  &::after {
+    margin: 0 auto;
   }
 }

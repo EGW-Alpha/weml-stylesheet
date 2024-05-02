@@ -9,19 +9,24 @@ w-non-egw {
   position: relative;
   color: $weml-w-non-egw-text-color;
 
-  &[type]:hover::after {
+  //&[type]:hover::after, {
+  //  text-indent: 0;
+  //  position: absolute;
+  //  color: $weml-w-non-egw-after-text-color;
+  //  left: 0;
+  //  top: -1em;
+  //  white-space: nowrap;
+  //  background: $weml-w-non-egw-after-background-color;
+  //  padding: 0 0.1em;
+  //  border-radius: 2px;
+  //  border-left: 1px solid;
+  //  border-right: 1px solid;
+  //  content: attr(type);
+  //}
+
+  &[type]::after {
     text-indent: 0;
-    position: absolute;
-    color: $weml-w-non-egw-after-text-color;
-    left: 0;
-    top: -1em;
-    white-space: nowrap;
-    background: $weml-w-non-egw-after-background-color;
-    padding: 0 0.1em;
-    border-radius: 2px;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    content: attr(type);
+    content: '['attr(type)']';
   }
 }
 

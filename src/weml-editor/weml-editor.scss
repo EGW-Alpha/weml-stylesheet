@@ -1,9 +1,7 @@
-@import "weml-editor_br";
 @import "../weml/weml_w-anchor";
 @import "../weml/weml_w-entity";
 @import "../weml/weml_w-format";
 @import "../weml/weml_w-heading";
-@import "weml-editor_w-image";
 @import "../weml/weml_w-lang";
 @import "../weml/weml_w-list";
 @import "../weml/weml_w-non-egw";
@@ -13,9 +11,10 @@
 @import "../weml/weml_w-page";
 @import "../weml/weml_w-sent";
 @import "../weml/weml_w-para";
-@import "weml-editor_w-table";
 @import "../weml/weml_w-text-block";
-
+@import "weml-editor_w-image";
+@import "weml-editor_br";
+@import "weml-editor_w-table";
 /* WEML-editor root styles */
 
 .weml-editor *[dir="rtl"] {

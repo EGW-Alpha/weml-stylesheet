@@ -7,40 +7,20 @@ $weml-w-anchor-after-background-color: rgba(180, 180, 180, 0.9);
 $weml-w-anchor-background-size: auto;
 $weml-w-anchor-font-color: #000;
 
-w-anchor {
-  display: inline-block;
-  text-indent: 0;
-  line-height: initial;
-  position: relative;
+w-anchor, a[id] {
+  //display: inline-block;
+  //text-indent: 0;
+  //line-height: initial;
+  //position: relative;
   margin: 0 5px;
   padding: 0 5px;
-  background: $weml-w-anchor-before-background-color;
-  outline: 1px solid $weml-w-anchor-before-border-color;
-  color: $weml-w-anchor-font-color;
+  //background: $weml-w-anchor-before-background-color;
+  outline: 1px solid currentColor;
+  //color: $weml-w-anchor-font-color;
   border-radius: 2px;
 
-  &::before {
-    content: '\00a0\00a0\00a0\00a0';
-    color: transparent;
+  &::after {
     text-indent: 0;
-    white-space: nowrap;
-    background-image: $weml-w-anchor-before-background-image;
-    background-size: $weml-w-anchor-background-size;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &:hover::after {
-    text-indent: 0;
-    position: absolute;
-    left: 0;
-    top: -1em;
-    white-space: nowrap;
-    background: $weml-w-anchor-after-background-color;
-    padding: 0 0.1em;
-    border-radius: 2px;
-    border-left: 1px solid;
-    border-right: 1px solid;
     content: attr(id);
   }
 }

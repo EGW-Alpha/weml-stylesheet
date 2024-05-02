@@ -9,18 +9,23 @@ w-entity {
   color: $weml-w-entity-text-color;
   position: relative;
 
+  //&[value]:hover::after {
+  //  text-indent: 0;
+  //  position: absolute;
+  //  color: $weml-w-entity-after-text-color;
+  //  left: 0;
+  //  top: -1em;
+  //  white-space: nowrap;
+  //  background: $weml-w-entity-after-background-color;
+  //  padding: 0 0.1em;
+  //  border-radius: 2px;
+  //  border-left: 1px solid;
+  //  border-right: 1px solid;
+  //  content: attr(value);
+  //}
   &[value]:hover::after {
-    text-indent: 0;
-    position: absolute;
-    color: $weml-w-entity-after-text-color;
-    left: 0;
-    top: -1em;
-    white-space: nowrap;
-    background: $weml-w-entity-after-background-color;
+    margin: 0 0.1em;
     padding: 0 0.1em;
-    border-radius: 2px;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    content: attr(value);
+    content: '['attr(value)']';
   }
 }

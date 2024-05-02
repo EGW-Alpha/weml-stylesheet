@@ -1,14 +1,15 @@
 /* WEML Image styles */
 
 figure {
+  margin: 1em auto;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   img {
-    width: inherit;
-    height: inherit;
+    width: auto;
+    height: auto;
+    max-width: 50vw;
   }
-
-  width: 10em;
-  height: auto;
-
   figcaption {
     font-size: 0.8em;
     opacity: 0.8;
