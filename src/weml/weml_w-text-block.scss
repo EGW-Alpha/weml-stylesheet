@@ -3,124 +3,239 @@
 $weml-paragraph-indent-size: 1.5em;
 $weml-paragraph-blockquote-border-color: #808080FF;
 
+
 w-text-block {
   display: block;
   margin: 1em 0;
-
-  /* blockquote */
-
   &[type="blockquote"] {
     border-left: 3px solid $weml-paragraph-blockquote-border-color;
     padding-left: 3px;
-    margin-left: $weml-paragraph-indent-size;
-
-    &[indent="0"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 0);
-    }
-
-    &[indent="1"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 1);
-    }
-
-    &[indent="2"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 2);
-    }
-
-    &[indent="3"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 3);
-    }
-
-    &[indent="4"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 4);
-    }
-
-    &[indent="5"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 5);
-    }
-
-    &[indent="6"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 6);
-    }
-
-    &[indent="7"] {
-      margin-left: calc(#{$weml-paragraph-indent-size} * 7);
-    }
   }
-
-  /* poem */
-
-  &[type="poem"] {
-    padding-left: $weml-paragraph-indent-size;
-
-    &[indent="0"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 0);
-    }
-
-    &[indent="1"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 1);
-    }
-
-    &[indent="2"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 2);
-    }
-
-    &[indent="3"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 3);
-    }
-
-    &[indent="4"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 4);
-    }
-
-    &[indent="5"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 5);
-    }
-
-    &[indent="6"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 6);
-    }
-
-    &[indent="7"] {
-      padding-left: calc(#{$weml-paragraph-indent-size} * 7);
-    }
-  }
+}
 
 
-  /* paragraph  */
-
-  &[type="paragraph"] {
-    text-indent: $weml-paragraph-indent-size;
-
-    &[indent="0"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 0);
-    }
-
-    &[indent="1"] {
+w-para {
+  w-text-block {
+    &[type="paragraph"] {
       text-indent: calc(#{$weml-paragraph-indent-size} * 1);
     }
-
-    &[indent="2"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 2);
+    &[type="blockquote"] {
+      margin-left: calc(#{$weml-paragraph-indent-size} * 1);
+    }
+    &[type="poem"] {
+      margin-left: calc(#{$weml-paragraph-indent-size} * 1);
+    }
+  }
+  &[indent='0'] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 0);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 0);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 0);
+      }
+    }
+  }
+  &[indent="1"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 1);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 1);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 1);
+      }
     }
 
-    &[indent="3"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 3);
+  }
+  &[indent="2"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 2);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 2);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 2);
+      }
     }
+  }
 
-    &[indent="4"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 4);
+  &[indent="3"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 3);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 3);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 3);
+      }
     }
+  }
 
-    &[indent="5"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 5);
+  &[indent="4"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 4);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 4);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 4);
+      }
     }
+  }
 
-    &[indent="6"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 6);
+  &[indent="5"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 5);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 5);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 5);
+      }
     }
+  }
 
-    &[indent="7"] {
-      text-indent: calc(#{$weml-paragraph-indent-size} * 7);
+  &[indent="6"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 6);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 6);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 6);
+      }
+    }
+  }
+
+  &[indent="7"] {
+    w-text-block {
+      &[type="paragraph"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 7);
+      }
+      &[type="blockquote"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 7);
+      }
+      &[type="poem"] {
+        margin-left: calc(#{$weml-paragraph-indent-size} * 7);
+      }
     }
   }
 }
+
+
+//w-text-block {
+//
+//  /* blockquote */
+//  //text-indent: $weml-paragraph-indent-size;
+//  &[type="blockquote"] {
+//
+//    //&[indent="1"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 1);
+//    //}
+//    //
+//    //&[indent="2"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 2);
+//    //}
+//    //
+//    //&[indent="3"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 3);
+//    //}
+//    //
+//    //&[indent="4"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 4);
+//    //}
+//    //
+//    //&[indent="5"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 5);
+//    //}
+//    //
+//    //&[indent="6"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 6);
+//    //}
+//    //
+//    //&[indent="7"] {
+//    //  margin-left: calc(#{$weml-paragraph-indent-size} * 7);
+//    //}
+//  }
+//
+//  /* poem */
+//  &[type="poem"] {
+//    //padding-left: $weml-paragraph-indent-size;
+//    //
+//    //&[indent="1"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 1);
+//    //}
+//    //
+//    //&[indent="2"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 2);
+//    //}
+//    //
+//    //&[indent="3"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 3);
+//    //}
+//    //
+//    //&[indent="4"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 4);
+//    //}
+//    //
+//    //&[indent="5"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 5);
+//    //}
+//    //
+//    //&[indent="6"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 6);
+//    //}
+//    //
+//    //&[indent="7"] {
+//    //  padding-left: calc(#{$weml-paragraph-indent-size} * 7);
+//    //}
+//  }
+//
+//  /* paragraph  */
+//  &[type="paragraph"] {
+//    text-indent: $weml-paragraph-indent-size;
+//    //
+//    //&[indent="1"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 1);
+//    //}
+//    //
+//    //&[indent="2"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 2);
+//    //}
+//    //
+//    //&[indent="3"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 3);
+//    //}
+//    //
+//    //&[indent="4"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 4);
+//    //}
+//    //
+//    //&[indent="5"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 5);
+//    //}
+//    //
+//    //&[indent="6"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 6);
+//    //}
+//    //
+//    //&[indent="7"] {
+//    //  text-indent: calc(#{$weml-paragraph-indent-size} * 7);
+//  }
+//}
