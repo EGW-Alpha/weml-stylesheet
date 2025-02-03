@@ -15,7 +15,9 @@ w-text-block {
 
 
 w-para {
+
   w-text-block {
+    text-indent: calc(#{$weml-paragraph-indent-size} * 1);
     &[type="paragraph"] {
       text-indent: calc(#{$weml-paragraph-indent-size} * 1);
     }
@@ -26,42 +28,50 @@ w-para {
       margin-left: calc(#{$weml-paragraph-indent-size} * 1);
     }
   }
-  &[indent='0'] {
+
+  &[indent="0"] {
     w-text-block {
       &[type="paragraph"] {
         text-indent: calc(#{$weml-paragraph-indent-size} * 0);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 0);
         margin-left: calc(#{$weml-paragraph-indent-size} * 0);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 0);
         margin-left: calc(#{$weml-paragraph-indent-size} * 0);
       }
     }
   }
+
   &[indent="1"] {
     w-text-block {
       &[type="paragraph"] {
         text-indent: calc(#{$weml-paragraph-indent-size} * 1);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 1);
         margin-left: calc(#{$weml-paragraph-indent-size} * 1);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 1);
         margin-left: calc(#{$weml-paragraph-indent-size} * 1);
       }
     }
-
   }
+
   &[indent="2"] {
     w-text-block {
       &[type="paragraph"] {
         text-indent: calc(#{$weml-paragraph-indent-size} * 2);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 2);
         margin-left: calc(#{$weml-paragraph-indent-size} * 2);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 2);
         margin-left: calc(#{$weml-paragraph-indent-size} * 2);
       }
     }
@@ -73,9 +83,11 @@ w-para {
         text-indent: calc(#{$weml-paragraph-indent-size} * 3);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 3);
         margin-left: calc(#{$weml-paragraph-indent-size} * 3);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 3);
         margin-left: calc(#{$weml-paragraph-indent-size} * 3);
       }
     }
@@ -87,9 +99,11 @@ w-para {
         text-indent: calc(#{$weml-paragraph-indent-size} * 4);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 4);
         margin-left: calc(#{$weml-paragraph-indent-size} * 4);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 4);
         margin-left: calc(#{$weml-paragraph-indent-size} * 4);
       }
     }
@@ -101,9 +115,11 @@ w-para {
         text-indent: calc(#{$weml-paragraph-indent-size} * 5);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 5);
         margin-left: calc(#{$weml-paragraph-indent-size} * 5);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 5);
         margin-left: calc(#{$weml-paragraph-indent-size} * 5);
       }
     }
@@ -115,9 +131,11 @@ w-para {
         text-indent: calc(#{$weml-paragraph-indent-size} * 6);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 6);
         margin-left: calc(#{$weml-paragraph-indent-size} * 6);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 6);
         margin-left: calc(#{$weml-paragraph-indent-size} * 6);
       }
     }
@@ -129,9 +147,11 @@ w-para {
         text-indent: calc(#{$weml-paragraph-indent-size} * 7);
       }
       &[type="blockquote"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 7);
         margin-left: calc(#{$weml-paragraph-indent-size} * 7);
       }
       &[type="poem"] {
+        text-indent: calc(#{$weml-paragraph-indent-size} * 7);
         margin-left: calc(#{$weml-paragraph-indent-size} * 7);
       }
     }
