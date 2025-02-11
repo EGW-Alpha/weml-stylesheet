@@ -1,19 +1,51 @@
 /* WEML W-List styles */
 
+w-li {
+  display: list-item;
+}
+
 w-list {
   display: block;
-  //margin: 1em 0;
-  padding-left: 1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+  margin: 1em 0;
+  padding-left: 40px;
+  list-style-type: circle;
 
   &[type="ordered"] {
     list-style-type: decimal;
-  }
+    &[marker="1"] {
+      list-style-type: decimal;
+    }
+    &[marker="a"] {
+      list-style-type: lower-latin;
+      //&[start] {
+      //  $start: attr(start, number);
+      //  counter-reset: count attr(start, number);
+      //  > w-li {
+      //    counter-increment: count;
+      //    &::marker {
+      //      content: counter(count, lower-latin) ". ";
+      //    }
+      //  }
+      //}
+    }
+    &[marker="A"] {
+      list-style-type: upper-latin;
+    }
+    &[marker="i"] {
+      list-style-type: lower-roman;
+    }
+    &[marker="I"] {
+      list-style-type: upper-roman;
+    }
 
+  }
   &[type="unordered"] {
     list-style-type: circle;
   }
-}
-
-w-li {
-  display: list-item;
 }
