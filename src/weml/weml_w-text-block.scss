@@ -6,8 +6,6 @@ $weml-paragraph-blockquote-border-color: #808080FF;
 
 w-text-block {
   display: block;
-  margin: 1em 0;
-
   &[type="blockquote"] {
     border-left: 3px solid $weml-paragraph-blockquote-border-color;
     padding-left: 3px;
@@ -17,6 +15,7 @@ w-text-block {
 
 w-para {
  > w-text-block {
+    margin: 1em 0;
     text-indent: calc(#{$weml-paragraph-indent-size} * 1);
 
     &[type="paragraph"] {
