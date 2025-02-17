@@ -111,3 +111,11 @@ const parseWLists = () => {
 };
 
 parseWLists();
+
+export default {
+  parseWLists,
+  isLatin,
+  isUppercase,
+  convertRomanToDecimal,
+  convertLatinToDecimal,
+};

@@ -48,6 +48,7 @@ const toggleIframeScripts = () => {
     // eslint-disable-next-line prefer-destructuring
     filePreviewIframeHead =
       filePreviewIframe.contentDocument.getElementsByTagName("head")[0];
+    // eslint-disable-next-line prefer-destructuring
   } else if (filePreviewIframe.contentWindow) {
     // eslint-disable-next-line prefer-destructuring
     filePreviewIframeHead =
@@ -63,13 +64,23 @@ const toggleIframeScripts = () => {
   iFrameWEMLStylesheet.rel = "stylesheet";
 
   const iFrameWEMLScript = document.createElement("script");
-  iFrameWEMLScript.type = "text/javascript";
+  iFrameWEMLScript.type = "module";
   iFrameWEMLScript.src = scriptUrl;
+  //   iFrameWEMLScript.textContent = `
+  //   import weml from '${scriptUrl}';
+  //   console.log({weml});
+  //   weml?.parseWLists();
+  // `;
   filePreviewIframeHead?.append(
     iFrameWEMLMeta,
     iFrameWEMLStylesheet,
     iFrameWEMLScript
   );
+  // iFrameWEMLScript.onload = () => {};
+  // const iFrameExecuteWEMLScript = document.createElement("script");
+  // iFrameExecuteWEMLScript.type = "text/javascript";
+  // iFrameExecuteWEMLScript.text = "weml?.parseWLists(); console.log('qwerty);";
+  // filePreviewIframeBody?.append(iFrameWEMLScript);
 };
 
 darkColorSchemeHandler.addEventListener("change", (event) => {
