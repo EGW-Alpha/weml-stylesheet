@@ -2,6 +2,7 @@
 
 w-li {
   display: list-item;
+  counter-increment: lis;
 }
 
 w-list {
@@ -14,38 +15,54 @@ w-list {
   unicode-bidi: isolate;
   margin: 1em 0;
   padding-left: 40px;
-  list-style-type: circle;
+  list-style-type: disc;
 
   &[type="ordered"] {
-    list-style-type: decimal;
+    list-style-type: none;
+    counter-reset: lis var(--wlist-start-value, 0);
+    w-li {
+      &::marker {
+        content: counter(lis)". ";
+      }
+    }
     &[marker="1"] {
-      list-style-type: decimal;
-    }
-    &[marker="a"] {
-      list-style-type: lower-latin;
-      //&[start] {
-      //  $start: attr(start, number);
-      //  counter-reset: count attr(start, number);
-      //  > w-li {
-      //    counter-increment: count;
-      //    &::marker {
-      //      content: counter(count, lower-latin) ". ";
-      //    }
-      //  }
-      //}
-    }
-    &[marker="A"] {
-      list-style-type: upper-latin;
-    }
-    &[marker="i"] {
-      list-style-type: lower-roman;
-    }
-    &[marker="I"] {
-      list-style-type: upper-roman;
+      w-li {
+        &::marker {
+          content: counter(lis)". ";
+        }
+      }
     }
 
+    &[marker="A"] {
+      w-li {
+        &::marker {
+          content: counter(lis, upper-alpha)". ";
+        }
+      }
+    }
+    &[marker="a"] {
+       w-li {
+         &::marker {
+           content: counter(lis, lower-alpha)". ";
+         }
+       }
+     }
+    &[marker="I"] {
+      w-li {
+        &::marker {
+          content: counter(lis, upper-roman)". ";
+        }
+      }
+    }
+    &[marker="i"] {
+      w-li {
+        &::marker {
+          content: counter(lis, lower-roman)". ";
+        }
+      }
+    }
   }
   &[type="unordered"] {
-    list-style-type: circle;
+    list-style-type: disc;
   }
 }

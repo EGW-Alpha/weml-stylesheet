@@ -22,6 +22,10 @@ module.exports = {
     indent: "off",
     sub: "off",
     camelcase: "off",
-    "no-console": "error",
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "no-plusplus": "off",
+    "no-continue": "off",
+    "no-restricted-globals": "off",
   },
 };

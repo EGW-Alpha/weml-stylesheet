@@ -1,13 +1,15 @@
 /* WEML w-note-body styles */
 
-$weml-w-note-body-background-color: rgba(180, 180, 180, 0.25);
-$weml-w-note-body-border-color: rgba(180, 180, 180, 0.25);
+
+:where(w-note-body, .w-note-body) {
+  --weml-w-note-body-background-color: #CCCCCCA5;
+}
 
 w-note-body, .w-note-body {
   text-indent: 0;
   padding: 5px;
-  background: $weml-w-note-body-background-color;
-  outline: 1px solid $weml-w-note-body-border-color;
+  background: var(--weml-w-note-body-background-color);
+  outline: 1px solid var(--weml-w-note-body-background-color);
   border-radius: 2px;
   width: initial;
   word-wrap: anywhere;
@@ -23,4 +25,10 @@ w-note-body {
 
 w-note:hover w-note-body {
   display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :where(w-note-body, .w-note-body) {
+    --weml-w-note-body-background-color: #5353537F;
+  }
 }

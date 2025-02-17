@@ -1,10 +1,8 @@
 /* WEML W-Page styles */
 
-$weml-w-page-before-background-color: #b4b4b4bf;
-$weml-w-page-before-border-color: rgba(88, 88, 88, 0.25);
-$weml-w-page-before-background-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' fill='currentColor' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M17 21v-4H7v4H5v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v5h-2zM7 3v4h10V3h2v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3h2zM2 9l4 3-4 3V9zm20 0v6l-4-3 4-3z'/%3E%3C/g%3E%3C/svg%3E");
-$weml-w-page-background-size: auto;
-$weml-w-page-font-color: #000;
+:where(w-page) {
+  --weml-w-page-before-background-color: #CCCCCCA5;
+}
 
 w-page {
   display: inline-block;
@@ -14,9 +12,8 @@ w-page {
   &::after {
     margin: 0 5px;
     padding: 0 5px;
-    background: $weml-w-page-before-background-color;
-    outline: 1px solid $weml-w-page-before-border-color;
-    color: $weml-w-page-font-color;
+    background: var(--weml-w-page-before-background-color);
+    outline: 1px solid var(--weml-w-page-before-background-color);
     border-radius: 2px;
     text-indent: 0;
     line-height: unset;
@@ -30,5 +27,11 @@ w-page:not(w-text-block w-page) {
   margin: 5px;
   &::after {
     margin: 0 auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :where(w-page) {
+    --weml-w-page-before-background-color: #5353537F;
   }
 }

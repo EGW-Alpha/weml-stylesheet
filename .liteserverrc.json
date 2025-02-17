@@ -1,6 +1,6 @@
 {
   "port": 9011,
-  "files": ["./example/**/*.{html,htm,css,js}"],
+  "files": ["./example/**/*.{html,weml,htm,css,js}"],
   "server":
   {
     "baseDir": "./example"

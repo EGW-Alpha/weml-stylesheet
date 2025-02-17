@@ -18,6 +18,24 @@
 
 /* WEML root styles */
 
+:where(body) {
+  --background-color: #FFF;
+  --text-color: #222;
+}
+
+body {
+  color-scheme: light dark;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :where(body) {
+    --background-color: #242528FF;
+    --text-color: #C9CACFFF;
+  }
+}
+
 *[dir="rtl"] {
   unicode-bidi: plaintext;
   text-align: start;

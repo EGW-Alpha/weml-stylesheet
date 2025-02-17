@@ -1,0 +1,86 @@
+:where(body) {
+  --background-color: #FFF;
+  --text-color: #222;
+}
+
+body {
+  color-scheme: light dark;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :where(body) {
+    --background-color: hsl(228, 5%, 15%);
+    --text-color: hsl(228, 5%, 80%);
+  }
+}
+
+.root {
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+}
+
+.app-shell-root {
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.app-shell-header {
+  width: 100dvw;
+  height: 50px;
+  background-color: rgb(0, 127, 165);;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 200;
+  padding: 0 10px;
+}
+
+.app-shell-main {
+  /*background-color: #242424;*/
+  width: 100dvw;
+  position: relative;
+  height: 100dvh;
+  padding-top: calc(50px + 10px);
+  padding-bottom: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  transition-property: padding;
+  /*color: #fff;*/
+}
+
+.app-page-container {
+  width: 100%;
+  height: 100%;
+}
+
+.weml-preview-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.weml-file-list {
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #555;
+}
+
+.weml-file-preview {
+  flex-grow: 1;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #555;
+}

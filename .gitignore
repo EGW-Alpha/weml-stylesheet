@@ -2,6 +2,7 @@
 .vscode/
 example/node_modules/
 css/
+js/
 
 ### Node template
 # Logs
