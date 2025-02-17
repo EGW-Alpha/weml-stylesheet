@@ -42,7 +42,7 @@ const togglePreview = (url) => {
 
 const toggleIframeScripts = () => {
   const styleUrl = `${window.location.origin}/css/weml.css`;
-  const scriptUrl = `${window.location.origin}/js/weml.js`;
+  const scriptUrl = `${window.location.origin}/scripts/weml.js`;
   let filePreviewIframeHead;
   if (filePreviewIframe.contentDocument) {
     // eslint-disable-next-line prefer-destructuring

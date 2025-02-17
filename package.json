@@ -1,6 +1,6 @@
 {
   "name": "weml-stylesheet",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "weml web format stylesheet",
   "author": "EGW-Alpha <rev4ge@outlook.com>",
   "license": "MIT",
@@ -11,17 +11,18 @@
   "main": "./",
   "files": [
     "css",
-    "js"
+    "scripts"
   ],
   "scripts": {
-    "build": "rimraf css && rimraf js && npm run build-js && npm run build-scss && npm run build-css && npm run build-autoprefix && npm run build-cleancss && npm run build-editor",
+    "build": "rimraf css && rimraf scripts && npm run types-generator && npm run build-scripts && npm run build-scss && npm run build-css && npm run build-autoprefix && npm run build-cleancss && npm run build-editor",
     "build-editor": "npm run build-editor-scss && npm run build-editor-css && npm run build-editor-autoprefix && npm run build-editor-cleancss",
-    "start": "concurrently --names \"SASS:WATCH,JS:WATCH,SERVE\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run sass:watch\" \"npm run js:watch\" \"npm run serve\"",
+    "start": "concurrently --names \"SASS:WATCH,SCRIPTS:WATCH,SERVE\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run sass:watch\" \"npm run scripts:watch\" \"npm run serve\"",
     "sass:watch": "sass --watch src/weml/weml.scss ./example/css/weml.css",
-    "js:watch": "cpx \"src/js/weml.js\" example/js --watch",
+    "scripts:watch": "cpx \"src/scripts/weml.js\" example/scripts --watch",
     "serve": "lite-server -c ./.liteserverrc.json",
     "build-css": "sass src/weml/weml.scss ./css/weml.css",
-    "build-js": "cpx \"src/js/weml.js\" js",
+    "types-generator": "tsc src/scripts/weml.js --declaration --allowJs --emitDeclarationOnly --outDir scripts",
+    "build-scripts": "cpx \"src/scripts/weml.js\" scripts",
     "build-autoprefix": "postcss --use autoprefixer --map --output ./css/weml.autoprefix.css ./css/weml.css",
     "build-scss": "bundle-scss -m src/weml/weml.scss -d ./css/weml.scss",
     "build-cleancss": "cleancss -o ./css/weml.min.css ./css/weml.css",
@@ -36,6 +37,7 @@
     "lint:fix": "eslint --fix ."
   },
   "devDependencies": {
+    "@types/node": "^22.13.4",
     "autoprefixer": "^10.4.14",
     "bundle-scss": "^1.5.1",
     "clean-css-cli": "^5.6.2",
@@ -59,6 +61,7 @@
     "stylelint-config-recommended-less": "^1.0.4",
     "stylelint-config-recommended-scss": "^9.0.1",
     "stylelint-config-sass-guidelines": "^10.0.0",
-    "stylelint-scss": "^4.6.0"
+    "stylelint-scss": "^4.6.0",
+    "typescript": "^5.7.3"
   }
 }
