@@ -1,6 +1,6 @@
 {
   "name": "weml-stylesheet",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "weml web format stylesheet",
   "author": "EGW-Alpha <rev4ge@outlook.com>",
   "license": "MIT",
@@ -8,7 +8,8 @@
     "type": "git",
     "url": "https://github.com/EGW-Alpha/weml-stylesheet.git"
   },
-  "main": "./",
+  "main": "./scripts/weml.js",
+  "types": "./scripts/main.d.ts",
   "files": [
     "css",
     "scripts"
